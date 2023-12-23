@@ -49,9 +49,14 @@ Executar as migrations:
     php artisan migrate
 ```
 
-Executar as Seeders:
+Executar a Seeder de geração de usuário:
 ```bash
-    php artisan db:seed
+    php artisan db:seed --class=UsuarioSeeder
+```
+
+Gerar a JWT Secret:
+```bash
+    php artisan jwt:secret
 ```
 
 Compilar os arquivos Vue e iniciar o servidor Laravel:
